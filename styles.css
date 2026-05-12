@@ -1,0 +1,95 @@
+/* Custom styles */
+
+/* Basic reset and typography */
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes bounceIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.3);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.05);
+    }
+    70% {
+        transform: scale(0.9);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.animate-fade-in-up {
+    animation: fadeInUp 0.8s ease-out forwards;
+    opacity: 0; /* Start hidden */
+}
+
+.animate-fade-in-up.delay-200 {
+    animation-delay: 0.2s;
+}
+
+.animate-fade-in-up.delay-400 {
+    animation-delay: 0.4s;
+}
+
+.animate-bounce-in {
+    animation: bounceIn 1s ease-out forwards;
+    opacity: 0; /* Start hidden */
+}
+
+.animate-bounce-in.delay-400 {
+    animation-delay: 0.4s;
+}
+
+/* Masonry-like grid for gallery (simple flex-wrap for responsiveness) */
+.masonry-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem; /* Tailwind's gap-4 */
+}
+
+.masonry-grid > img {
+    flex: 1 1 auto; /* Allow items to grow and shrink */
+    min-width: 150px; /* Minimum width before wrapping */
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* For a more true masonry effect with varying heights,
+   you'd typically use JavaScript or CSS columns, but
+   for simplicity and broad compatibility, flex-wrap
+   with varying image aspect ratios often suffices visually.
+   If images are all same height, this acts like a regular grid.
+   For actual masonry, consider:
+   .masonry-grid {
+       column-count: 2;
+       column-gap: 1rem;
+   }
+   .masonry-grid > img {
+       break-inside: avoid;
+       margin-bottom: 1rem;
+   }
+   (Adjust column-count for different screen sizes)
+*/
+
+/* Custom shadow depth for CTA */
+.shadow-3xl {
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.35), 0 10px 10px -5px rgba(0, 0, 0, 0.1);
+}
