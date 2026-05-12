@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hair & There | Edmore's Premier Hair Salon</title>
+    <meta name="description" content="Experience personalized haircuts, vibrant coloring, and expert styling at Hair & There in Edmore, Michigan. Your best hair day starts here!">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+    <!-- Google Fonts: Space Grotesk for headings, Inter for body -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Space Grotesk', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: '#4A7C59', // Muted forest green
+                        secondary: '#73A9AD', // Calming teal
+                        accent: '#E0BBE4', // Soft lavender
+                        dark: '#2C3E50', // Deep charcoal blue
+                        light: '#F8F8F8', // Soft off-white/cream
+                        'text-muted': '#6B7280', // Gray for secondary text
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="/styles.css">
+
+    
+</head>
+<body class="font-sans text-dark bg-light">
+    <header class="sticky top-0 z-50 bg-light/80 backdrop-blur-sm shadow-md">
+        <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="/" class="text-2xl font-display font-bold text-primary hover:text-secondary transition-colors duration-300">Hair & There</a>
+            <ul class="hidden md:flex space-x-8">
+                <li><a href="#services" class="text-lg font-medium text-dark hover:text-primary transition-colors duration-300">Services</a></li>
+                <li><a href="#gallery" class="text-lg font-medium text-dark hover:text-primary transition-colors duration-300">Gallery</a></li>
+                <li><a href="#testimonials" class="text-lg font-medium text-dark hover:text-primary transition-colors duration-300">Reviews</a></li>
+                <li><a href="#contact" class="text-lg font-medium text-dark hover:text-primary transition-colors duration-300">Contact</a></li>
+            </ul>
+            <a href="#booking" id="cta-button" class="cta-action hidden md:block bg-primary text-white px-6 py-3 rounded-lg font-semibold shadow-lg hover:-translate-y-1 hover:shadow-xl transition-all duration-300">Book Now</a>
+            <button class="md:hidden text-dark text-2xl">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section - Asymmetrical Split -->
+        <section class="relative bg-gradient-to-br from-light to-secondary/10 py-16 md:py-24 overflow-hidden">
+            <div class="container mx-auto px-4 grid md:grid-cols-2 gap-12 items-center relative z-10">
+                <div class="order-2 md:order-1">
+                    <img src="https://images.unsplash.com/photo-1555974005-72877a112250?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Stylist working on client's hair" class="rounded-2xl shadow-2xl ring-4 ring-primary/20 ring-offset-8 ring-offset-light transform rotate-2 hover:rotate-0 transition-transform duration-500">
+                </div>
+                <div class="text-center md:text-left order-1 md:order-2 animate-fade-in-up">
+                    <h1 class="text-4xl md:text-6xl font-display font-bold leading-tight mb-6 text-dark">
+                        Your Perfect Hair Journey Starts Here.
+                    </h1>
+                    <p class="text-lg md:text-xl max-w-xl mx-auto md:mx-0 mb-10 text-text-muted animate-fade-in-up delay-200">
+                        Experience personalized haircuts, vibrant coloring, and expert styling at Hair & There in Edmore, Michigan.
+                    </p>
+                    <a href="#booking" id="cta-button" class="cta-action inline-block bg-accent text-dark px-10 py-4 rounded-full text-xl font-bold shadow-2xl hover:-translate-y-2 hover:shadow-3xl transition-all duration-300 ring-4 ring-accent/50 ring-offset-4 ring-offset-light animate-bounce-in delay-400">
+                        Book Your Transformation
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="py-16 md:py-24 bg-gradient-to-br from-light to-primary/5">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl md:text-5xl font-display font-bold text-center mb-12 text-dark">Our Signature Services</h2>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Service Card 1 -->
+                    <article class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border border-secondary/20">
+                        <h3 class="text-2xl font-display font-semibold text-primary mb-4">Precision Haircuts</h3>
+                        <p class="text-text-muted mb-6">
+                            From classic trims to modern styles, our expert stylists craft the perfect cut for men, women, and children.
+                        </p>
+                        <a href="#booking" class="cta-action text-secondary font-semibold hover:underline flex items-center">
+                            Learn More & Book
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                            </svg>
+                        </a>
+                    </article>
+                    <!-- Service Card 2 -->
+                    <article class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border border-secondary/20">
+                        <h3 class="text-2xl font-display font-semibold text-primary mb-4">Vibrant Color & Highlights</h3>
+                        <p class="text-text-muted mb-6">
+                            Transform your look with stunning color, balayage, highlights, or a complete color correction.
+                        </p>
+                        <a href="#booking" class="cta-action text-secondary font-semibold hover:underline flex items-center">
+                            Learn More & Book
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                            </svg>
+                        </a>
+                    </article>
+                    <!-- Service Card 3 -->
+                    <article class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border border-secondary/20">
+                        <h3 class="text-2xl font-display font-semibold text-primary mb-4">Perms & Styling</h3>
+                        <p class="text-text-muted mb-6">
+                            Add volume and texture with a perm, or get the perfect style for any special occasion.
+                        </p>
+                        <a href="#booking" class="cta-action text-secondary font-semibold hover:underline flex items-center">
+                            Learn More & Book
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                            </svg>
+                        </a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose Us Section -->
+        <section class="py-16 md:py-24 bg-gradient-to-tl from-light to-accent/10">
+            <div class="container mx-auto px-4 grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl md:text-5xl font-display font-bold text-dark mb-6">
+                        More Than Just a Haircut. It's an Experience.
+                    </h2>
+                    <p class="text-lg text-text-muted mb-6">
+                        At Hair & There, we believe in creating a welcoming atmosphere where you can relax and trust our skilled stylists to bring your vision to life. We use premium products and stay updated on the latest trends to ensure you leave feeling confident and beautiful.
+                    </p>
+                    <ul class="space-y-4 text-lg text-dark">
+                        <li class="flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                            </svg>
+                            Personalized Consultations
+                        </li>
+                        <li class="flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                            </svg>
+                            Experienced & Friendly Stylists
+                        </li>
+                        <li class="flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                            </svg>
+                            Relaxing & Modern Salon Environment
+                        </li>
+                    </ul>
+                </div>
+                <div class="relative">
+                    <img src="https://images.unsplash.com/photo-1596465420364-282006730030?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Hair salon interior" class="rounded-2xl shadow-2xl ring-4 ring-secondary/20 ring-offset-8 ring-offset-light transform -rotate-3 hover:rotate-0 transition-transform duration-500">
+                    <div class="absolute -bottom-8 -right-8 bg-white p-4 rounded-lg shadow-xl text-center transform rotate-6 hover:rotate-0 transition-transform duration-500">
+                        <p class="text-xl font-display font-bold text-primary">5.0 Star Rated</p>
+                        <p class="text-sm text-text-muted">on Google & Facebook</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section - Masonry Grid -->
+        <section id="gallery" class="py-16 md:py-24 bg-light">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl md:text-5xl font-display font-bold text-center mb-12 text-dark">Our Work Speaks For Itself</h2>
+                <div class="masonry-grid-css">
+                    <img src="https://images.unsplash.com/photo-1596465420364-282006730030?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Haircut example 1" class="w-full h-auto rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                    <img src="https://images.unsplash.com/photo-1580618059632-601438902573?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Hair color example 1" class="w-full h-auto rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                    <img src="https://images.unsplash.com/photo-1596465420364-282006730030?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Haircut example 2" class="w-full h-auto rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                    <img src="https://images.unsplash.com/photo-1580618059632-601438902573?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Hair color example 2" class="w-full h-auto rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                    <img src="https://images.unsplash.com/photo-1596465420364-282006730030?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Haircut example 3" class="w-full h-auto rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                    <img src="https://images.unsplash.com/photo-1580618059632-601438902573?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Hair color example 3" class="w-full h-auto rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                </div>
+                <div class="text-center mt-12">
+                    <a href="https://www.facebook.com/HairAndThereEdmore/" target="_blank" rel="noopener noreferrer" class="cta-action inline-block bg-primary text-white px-8 py-3 rounded-lg font-semibold shadow-lg hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
+                        View More on Facebook
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="py-16 md:py-24 bg-gradient-to-br from-secondary/10 to-accent/20">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl md:text-5xl font-display font-bold text-center mb-12 text-dark">What Our Clients Say</h2>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Testimonial 1 -->
+                    <blockquote class="bg-white p-8 rounded-xl shadow-lg border-l-4 border-primary hover:shadow-2xl transition-shadow duration-300">
+                        <p class="text-lg text-text-muted mb-6 italic">"Always a fantastic experience! The stylists are incredibly talented and truly listen to what you want. My hair has never looked better!"</p>
+                        <footer class="font-semibold text-dark">- Sarah J., Edmore</footer>
+                    </blockquote>
+                    <!-- Testimonial 2 -->
+                    <blockquote class="bg-white p-8 rounded-xl shadow-lg border-l-4 border-primary hover:shadow-2xl transition-shadow duration-300">
+                        <p class="text-lg text-text-muted mb-6 italic">"Hair & There is my go-to salon. Friendly staff, great atmosphere, and I always leave feeling refreshed and happy with my cut and color."</p>
+                        <footer class="font-semibold text-dark">- Mark T., Stanton</footer>
+                    </blockquote>
+                    <!-- Testimonial 3 -->
+                    <blockquote class="bg-white p-8 rounded-xl shadow-lg border-l-4 border-primary hover:shadow-2xl transition-shadow duration-300">
+                        <p class="text-lg text-text-muted mb-6 italic">"They do an amazing job with my kids' haircuts. Patient and professional, highly recommend for the whole family!"</p>
+                        <footer class="font-semibold text-dark">- Emily R., McBride</footer>
+                    </blockquote>
+                </div>
+                <div class="text-center mt-12">
+                    <a href="https://www.google.com/search?q=Hair+%26+There+Edmore+Michigan" target="_blank" rel="noopener noreferrer" class="cta-action inline-block bg-primary text-white px-8 py-3 rounded-lg font-semibold shadow-lg hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
+                        Read All 5-Star Reviews
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action / Booking Section -->
+        <section id="booking" class="py-16 md:py-24 bg-dark text-white text-center">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl md:text-5xl font-display font-bold mb-6">Ready for Your New Look?</h2>
+                <p class="text-lg md:text-xl max-w-3xl mx-auto mb-10 opacity-90">
+                    Don't wait to experience the best hair care in Edmore. Book your appointment today!
+                </p>
+                <a href="tel:+12314270000" id="cta-button" class="cta-action inline-block bg-accent text-dark px-10 py-4 rounded-full text-xl font-bold shadow-2xl hover:-translate-y-2 hover:shadow-3xl transition-all duration-300 ring-4 ring-accent/50 ring-offset-4 ring-offset-dark">
+                    Call to Book Now (231) 427-0000
+                </a>
+                <p class="text-sm mt-4 opacity-70">Or send us a message on Facebook to inquire.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-gray-300 py-12">
+        <div class="container mx-auto px-4 grid md:grid-cols-3 gap-8">
+            <div>
+                <h3 class="text-xl font-display font-bold text-white mb-4">Hair & There</h3>
+                <p class="mb-2">123 Main St, Edmore, MI 48829</p>
+                <p class="mb-2">Phone: <a href="tel:+12314270000" class="hover:text-white transition-colors duration-300">(231) 427-0000</a></p>
+                <p>Email: <a href="mailto:info@hairandthere.com" class="hover:text-white transition-colors duration-300">info@hairandthere.com</a></p>
+            </div>
+            <div>
+                <h3 class="text-xl font-display font-bold text-white mb-4">Hours</h3>
+                <p>Tuesday - Friday: 9 AM - 5 PM</p>
+                <p>Saturday: 9 AM - 2 PM</p>
+                <p>Sunday & Monday: Closed</p>
+            </div>
+            <div>
+                <h3 class="text-xl font-display font-bold text-white mb-4">Connect</h3>
+                <div class="flex space-x-4">
+                    <a href="https://www.facebook.com/HairAndThereEdmore/" target="_blank" rel="noopener noreferrer" class="text-gray-300 hover:text-white transition-colors duration-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.271 0-4.192 1.543-4.192 4.192v2.808z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="container mx-auto px-4 text-center mt-8 text-gray-500 text-sm">
+            &copy; 2023 Hair & There. All rights reserved.
+        </div>
+    </footer>
+
+    
+
+    <!-- SiteFlow Analytics Tracker -->
+    <script>
+      window._sf_config = {
+        username: 'wuhp',
+        businessId: '7ctdgo',
+        variant: 'B',
+        origin: 'https://wuhp-isb.hf.space'
+      };
+    </script>
+    <script src="https://wuhp-isb.hf.space/tracker.js" async></script>
+  
+
+    <!-- SiteFlow Analytics Tracker -->
+    <script>
+      window._sf_config = {
+        username: 'wuhp',
+        businessId: '7ctdgo',
+        variant: 'B',
+        origin: 'https://wuhp-isb.hf.space'
+      };
+    </script>
+    <script src="./tracker.js" async></script>
+  </body>
+</html>
